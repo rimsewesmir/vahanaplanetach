@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title>Gravitace na jiných planetách</title>
+        <style>
+           p{color: white;
+             background-color: rgb(0, 0, 0);
+             }
+            body{background-color: rgb(73, 147, 212);}
+        </style>
+    </head>
+    <body>
+        <h1>Zadej svou hmotnost</h1>
+        <input type="number" placeholder="Tvoje hmotnost na Zemi, např 60kg" id="hmZ">
+        <button onclick="vypocitat()">Spočítat mou hmotnost na cizích planetách, Slunci a Měsíci a Plutu</button>
+        <p id="Slunce"></p>
+        <p id="Merkur"></p>
+        <p id="Venuše"></p>
+        <p id="Měsíc"></p>
+        <p id="Mars"></p>
+        <p id="Jupite"></p>
+        <p id="Saturn"></p>
+        <p id="Uran"></p>
+        <p id="Neptun"></p>
+        <p id="Pluto"></p>
+    <script>
+        function vypocitat(){let a = document.getElementById("hmZ").value;
+                             let hmSL = 27.4*a;
+                             document.getElementById("Slunce").textContent="Tvoje váha na Slunci:"+hmSL+"kg";
+                             let hmMe = 0.37*a;
+                             document.getElementById("Merkur").textContent="Tvoje váha na Merkuru:"+hmMe+"kg";
+                             let hmVE = 0.887*a;
+                             document.getElementById("Venuše").textContent="Tvoje váha na Venuši:"+hmVE+"kg";
+                             let hmMsc = 0.162*a;
+                             document.getElementById("Měsíc").textContent="Tvoje váha na Měsíci:"+hmMsc+"kg";
+                             let hmMa = 0.373*a;
+                             document.getElementById("Mars").textContent="Tvoje váha na Marsu:"+hmMa+"kg";
+                             let hmJu = 2.479*a;
+                             document.getElementById("Jupite").textContent="Tvoje váha na Jupiteru:"+hmJu+"kg";
+                             let hmSa = 1.04*a;
+                             document.getElementById("Saturn").textContent="Tvoje váha na Saturnu:"+hmSa+"kg";
+                             let hmUr = 0.869*a;
+                             document.getElementById("Uran").textContent="Tvoje váha na Uranu:"+hmUr+"kg";
+                             let hmNe = 1.115*a;
+                             document.getElementById("Neptun").textContent="Tvoje váha na Neptunu:"+hmNe+"kg";
+                             let hmPl = 0.062*a;
+                             document.getElementById("Pluto").textContent="Tvoje váha na Plutu:"+hmPl+"kg";
+
+        }
+    </script>
+    </body>
+</html>
