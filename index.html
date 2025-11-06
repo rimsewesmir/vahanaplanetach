@@ -3,7 +3,7 @@
     <head>
         <title>Gravitace na jiných planetách</title>
         <style>
-           p{color: white;
+           div{color: white;
              background-color: rgb(0, 0, 0);
              }
             body{background-color: rgb(73, 147, 212);}
@@ -13,7 +13,7 @@
         <h1>Zadej svou hmotnost</h1>
         <input type="number" placeholder="Tvoje hmotnost na Zemi, např 60kg" id="hmZ">
         <button onclick="vypocitat()">Spočítat mou hmotnost na cizích planetách, Slunci a Měsíci a Plutu</button>
-        <p id="Slunce"></p>
+        <div><p id="Slunce"></p>
         <p id="Merkur"></p>
         <p id="Venuše"></p>
         <p id="Měsíc"></p>
@@ -22,7 +22,7 @@
         <p id="Saturn"></p>
         <p id="Uran"></p>
         <p id="Neptun"></p>
-        <p id="Pluto"></p>
+        <p id="Pluto"></p></div>
     <script>
         function vypocitat(){let a = Number(document.getElementById("hmZ").value);
                              let hmSL = 27.4*a;
@@ -51,3 +51,4 @@
     </body>
 
 </html>
+
